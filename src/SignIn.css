@@ -1,107 +1,108 @@
 /* Container holding the whole sign-in page */
 .signin-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Left side styling */
-  .signin-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #660809, #CC1012);
-    color: white;
-  }
-  
-  .logo-container {
-    text-align: center;
-  }
-  
-  .logo {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  .system-name {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  /* Right side styling */
-  .signin-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 50px;
-    background-color: white;
-  }
-  
-  h2 {
-    margin-bottom: 50px;
-    font-size: 32px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .signin-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    display: block;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px 0;
-    margin-top: 5px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    box-sizing: border-box;
-    background-color: transparent;
-  }
-  
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    border-bottom: 2px solid #660809;
-  }
-  
-  /* Placeholder styling */
-  input::placeholder {
-    color: rgba(102, 8, 9, 0.5); /* #660809 color with 50% opacity */
-  }
-  
-  .form-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .forgot-password,
-  .signup {
-    color: #660809;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .forgot-password:hover,
-  .signup:hover {
-    text-decoration: underline;
-  }
-  
-  .login-button {
+  display: flex;
+  height: 100vh;
+  flex-direction: row; /* Default layout for larger screens */
+}
+
+/* Left side styling */
+.signin-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #660809, #CC1012);
+  color: white;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.system-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Right side styling */
+.signin-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  background-color: white;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #660809;
+}
+
+input::placeholder {
+  color: rgba(102, 8, 9, 0.5);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.forgot-password,
+.signup {
+  color: #660809;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password:hover,
+.signup:hover {
+  text-decoration: underline;
+}
+
+.login-button {
   width: 171px;
   height: 48px;
   background-color: #660809;
@@ -113,99 +114,116 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
-  
-  .login-button:hover {
-    background-color: #cc1012;
+
+.login-button:hover {
+  background-color: #cc1012;
+}
+
+.regular-text {
+  font-weight: normal;
+}
+
+/* Social sign-in buttons */
+.google-signin, .facebook-signin, .other-signin-options {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.google-signin {
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.facebook-signin {
+  background-color: #3B5998;
+  color: #fff;
+}
+
+.google-signin img, .facebook-signin img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.or-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.or-container span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.other-login-options {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.other-signin-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.other-signin-options li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column; /* Stack the left and right sides on top of each other */
   }
-  .regular-text {
-    font-weight: normal;
+
+  .signin-left, .signin-right {
+    flex: none; /* Reset flex to allow stacking */
+    width: 100%; /* Make each side take full width */
+    padding: 20px; /* Add some padding for smaller screens */
   }
-  .google-signin {
-    background-color: #4285F4;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .signin-right {
+    padding: 20px;
   }
-  
-  .google-signin img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+
+  h2 {
+    margin-bottom: 30px; /* Reduce space between title and form */
+    font-size: 28px;
   }
-  
-  .other-signin-options {
-    background-color: #fff;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .login-button {
+    margin-top: 30px; /* Add more space around the button */
   }
-  
-  .other-login-options {
-    margin-top: 20px;
-    text-align: center;
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px; /* Space out links vertically */
   }
-  .other-signin-options ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
   }
-  
-  .other-signin-options {
-    background-color: #fff;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .system-name {
+    font-size: 20px;
   }
-  
-  .or-container {
-    margin: 20px 0;
-    text-align: center;
+
+  .logo {
+    width: 120px;
   }
-  
-  .or-container span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #666;
+
+  .signin-right {
+    padding: 15px;
   }
-  .google-signin {
-    background-color: #4285F4;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .google-signin img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  .other-signin-options li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  .facebook-signin {
-    background-color: #3B5998;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  .facebook-signin img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
+}
