@@ -1,0 +1,211 @@
+/* Container holding the whole sign-in page */
+.signin-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left side styling */
+  .signin-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #660809, #CC1012);
+    color: white;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .system-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Right side styling */
+  .signin-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    background-color: white;
+  }
+  
+  h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #660809;
+  }
+  
+  /* Placeholder styling */
+  input::placeholder {
+    color: rgba(102, 8, 9, 0.5); /* #660809 color with 50% opacity */
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password,
+  .signup {
+    color: #660809;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .forgot-password:hover,
+  .signup:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+  width: 171px;
+  height: 48px;
+  background-color: #660809;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
+  
+  .login-button:hover {
+    background-color: #cc1012;
+  }
+  .regular-text {
+    font-weight: normal;
+  }
+  .google-signin {
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-signin img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .other-signin-options {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .other-login-options {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .other-signin-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .other-signin-options {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .or-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .or-container span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+  .google-signin {
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-signin img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .other-signin-options li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .facebook-signin {
+    background-color: #3B5998;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .facebook-signin img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
