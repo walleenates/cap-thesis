@@ -9,10 +9,10 @@ function SignIn() {
   <div className="logo-container">
     <img src="spclogo.png" alt="School Logo" className="logo" />
     <div className="system-name">
-  <span className="bold-text">School Inventory</span>
-  <br />
-  <span className="regular-text">Management System</span>
+  <span style={{ fontSize: '150px', fontWeight: 'normal', fontFamily: 'Arial, sans-serif' }}>SIMS</span>
 </div>
+
+
   </div>
 </div>
 

@@ -21,7 +21,7 @@
 }
 
 .logo {
-  width: 150px;
+  width: 250px;
   margin-bottom: 20px;
 }
 
@@ -239,10 +239,7 @@ input::placeholder {
     font-size: 24px;
   }
 
-  .system-name {
-    font-size: 20px;
-  }
-
+  
   .logo {
     width: 120px;
   }
