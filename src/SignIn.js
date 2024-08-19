@@ -48,9 +48,12 @@ function SignIn() {
         Sign in with Facebook
       </button>
     </div>
+    <div className="new-account">
+      <span>New here? </span><a href="/signup" className="create-account">Create an account</a>
+    </div>
   </form>
 </div>
-    </div>
+</div>
   );
 }
 

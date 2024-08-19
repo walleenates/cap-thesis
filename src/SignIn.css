@@ -108,7 +108,7 @@ input::placeholder {
   background-color: #660809;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 9px;
   cursor: pointer;
   font-weight: bold;
   display: flex;
@@ -131,14 +131,18 @@ input::placeholder {
   color: #333;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  
   cursor: pointer;
   margin-bottom: 10px;
+  
 }
 
 .google-signin {
   background-color: #4285F4;
   color: #fff;
+  width: 171px;
+  height: 48px;
+  
 }
 
 .facebook-signin {
@@ -146,10 +150,11 @@ input::placeholder {
   color: #fff;
 }
 
-.google-signin img, .facebook-signin img {
+.google-signin img,
+.facebook-signin img {
   width: 20px;
   height: 20px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .or-container {
@@ -164,8 +169,25 @@ input::placeholder {
 }
 
 .other-login-options {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;  
+}
+.google-signin,
+.facebook-signin {
+  width: 100%; /* Ensure buttons are the same width */
+  max-width: 300px; /* Set a max-width for the buttons */
   text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9px; /* Same border-radius for both buttons */
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* Ensures both buttons have the same height */
 }
 
 .other-signin-options ul {
@@ -204,6 +226,8 @@ input::placeholder {
     margin-top: 30px; /* Add more space around the button */
   }
 
+
+
   .form-actions {
     flex-direction: column;
     gap: 10px; /* Space out links vertically */
@@ -226,4 +250,19 @@ input::placeholder {
   .signin-right {
     padding: 15px;
   }
+}
+
+.new-account {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.create-account {
+  color: #0BACD4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.create-account:hover {
+  text-decoration: underline;
 }
