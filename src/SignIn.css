@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 50px;
+  margin: 0 auto;
   background-color: white;
 }
 
@@ -55,6 +56,7 @@ h2 {
 
 .form-group {
   margin-bottom: 20px;
+
 }
 
 label {
@@ -65,8 +67,8 @@ label {
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 10px 0;
+  width: 40%; /* Reduce the width of the input fields */
+  padding: 8px 0; /* Adjust padding if needed */
   margin-top: 5px;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -81,20 +83,44 @@ input[type="password"]:focus {
 }
 
 input::placeholder {
+  font-size: 14px;
   color: rgba(102, 8, 9, 0.5);
 }
 
 .form-actions {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .form-actions {
+    justify-content: center; /* Center the link on smaller screens */
+  }
+
+  .forgot-password {
+    font-size: 13px; /* Slightly smaller text size for better fit */
+    margin-top: 5px; /* Add some space above on smaller screens */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .form-actions {
+    justify-content: center; /* Center the link */
+  }
+
+  .forgot-password {
+    font-size: 12px; /* Further reduce font size for mobile */
+    margin-top: 8px; /* Ensure enough spacing on smaller screens */
+  }
+}
 .forgot-password,
 .signup {
   color: #660809;
   text-decoration: none;
   font-weight: bold;
+  margin-left: 20em;
 }
 
 .forgot-password:hover,
@@ -103,8 +129,8 @@ input::placeholder {
 }
 
 .login-button {
-  width: 171px;
-  height: 48px;
+  width: 150px; /* Adjusted width */
+  height: 40px; /* Reduced height */
   background-color: #660809;
   color: white;
   border: none;
@@ -114,7 +140,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .login-button:hover {
@@ -214,7 +240,15 @@ input::placeholder {
   }
 
   .signin-right {
-    padding: 20px;
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px; /* Reduced padding */
+  max-width: 400px; /* Set a max-width for the form */
+  margin: 0 auto;
+  background-color: white;
+  
   }
 
   h2 {
@@ -263,3 +297,5 @@ input::placeholder {
 .create-account:hover {
   text-decoration: underline;
 }
+
+

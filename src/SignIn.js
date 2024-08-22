@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import './SignIn.css'; 
 
@@ -32,7 +33,7 @@ function SignIn() {
     </div>
     <div className="form-actions">
       <a href="/forgot-password" className="forgot-password">Forgot Password?</a>
-      <a href="/signup" className="signup">Sign Up</a>
+      <a href="/signup" className="signup"></a>
     </div>
     <center><button type="submit" className="login-button">Login</button></center>
     <div className="or-container">
